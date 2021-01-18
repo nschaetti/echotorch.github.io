@@ -1,3 +1,5 @@
+<p align="center"><img src="docs/images/echotorch_complete.png" /></p>
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/nschaetti/echotorch.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
