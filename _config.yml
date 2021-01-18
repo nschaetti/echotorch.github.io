@@ -1,3 +1,4 @@
 theme: jekyll-theme-cayman
 title: EchoTorch
 description: Reservoir Computing, Dynamical Systems, Timeseries Analysis, Neural Dynamics with PyTorch
+repository_url: https://github.com/nschaetti/EchoTorch
