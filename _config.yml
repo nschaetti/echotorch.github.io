@@ -3,3 +3,4 @@ title: EchoTorch
 description: Reservoir Computing, Dynamical Systems, Timeseries Analysis, Neural Dynamics with PyTorch
 repository_url: https://github.com/nschaetti/EchoTorch
 github.zip_url: https://github.com/nschaetti/EchoTorch/archive/dev.zip
+show_downloads: true
