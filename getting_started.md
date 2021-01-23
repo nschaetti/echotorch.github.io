@@ -55,19 +55,21 @@ esn_model = etnn.LiESN(...)
 
 ## Summary
 
-> narma10_training_dataset = echotorch.dataset("narma-10")
-> narma10_test_dataset = echotorch.dataset("narma-10")
-> 
-> normalize_transformer = echotorch.transformer("normalize")
-> narma10_training_dataset.transform = normalize_transformer
-> narma10_test_dataset.transform = normalize_transformer
-> 
-> esn_model = etnn.LiESN(...)
-> 
-> echotorch.fit(esn_model, narma10_training_dataset)
-> 
-> nrmse_score = echotorch.eval(esn_model, narma10_test_dataset)
-> print(nrmse_score)
+```python
+narma10_training_dataset = echotorch.dataset("narma-10")
+narma10_test_dataset = echotorch.dataset("narma-10")
+
+normalize_transformer = echotorch.transformer("normalize")
+narma10_training_dataset.transform = normalize_transformer
+narma10_test_dataset.transform = normalize_transformer
+
+esn_model = etnn.LiESN(...)
+
+echotorch.fit(esn_model, narma10_training_dataset)
+
+nrmse_score = echotorch.eval(esn_model, narma10_test_dataset)
+print(nrmse_score)
+```
 
 ## Next
 
