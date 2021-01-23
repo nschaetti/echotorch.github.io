@@ -56,17 +56,25 @@ esn_model = etnn.LiESN(...)
 ## Summary
 
 ```python
+import echotorch
+import echotorch.nn as etnn
+
+# Create training and test sets
 narma10_training_dataset = echotorch.dataset("narma-10")
 narma10_test_dataset = echotorch.dataset("narma-10")
 
+# Create transformer to normalize time series
 normalize_transformer = echotorch.transformer("normalize")
 narma10_training_dataset.transform = normalize_transformer
 narma10_test_dataset.transform = normalize_transformer
 
+# Create Leaky integrator ESN
 esn_model = etnn.LiESN(...)
 
+# Train the ESN
 echotorch.fit(esn_model, narma10_training_dataset)
 
+# Eval trained ESN and show the NRMSE
 nrmse_score = echotorch.eval(esn_model, narma10_test_dataset)
 print(nrmse_score)
 ```
