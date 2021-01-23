@@ -14,11 +14,15 @@ PyTorch for Reservoir Computing and timeseries analysis.
 
 EchoTorch is available on pip and pip test. To install it, just call pip
 
-> pip install EchoTorch
+```commandline
+pip install EchoTorch
+```
 
 or if you want to test the development version
 
-> pip install -i https://test.pypi.org/simple/ EchoTorch
+```commandline
+pip install -i https://test.pypi.org/simple/ EchoTorch
+```
 
 ## Getting started
 
@@ -46,12 +50,16 @@ esn_model = etnn.LiESN(...)
 
 ### Train the network
 
-> echotorch.fit(esn_model, narma10_training_dataset)
+```python
+echotorch.fit(esn_model, narma10_training_dataset)
+```
 
 ### Eval the model
 
-> nrmse_score = echotorch.eval(esn_model, narma10_test_dataset)
-> print(nrmse_score)
+```python
+nrmse_score = echotorch.eval(esn_model, narma10_test_dataset)
+print(nrmse_score)
+```
 
 ## Summary
 
