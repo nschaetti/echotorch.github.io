@@ -25,18 +25,24 @@ or if you want to test the development version
 
 ### Datasets
 
-> narma10_training_dataset = echotorch.dataset("narma-10")
-> narma10_test_dataset = echotorch.dataset("narma-10")
+```python
+narma10_training_dataset = echotorch.dataset("narma-10")
+narma10_test_dataset = echotorch.dataset("narma-10")
+```
 
 ### Preprocessing
 
-> normalize_transformer = echotorch.transformer("normalize")
-> narma10_training_dataset.transform = normalize_transformer
-> narma10_test_dataset.transform = normalize_transformer
+```python
+normalize_transformer = echotorch.transformer("normalize")
+narma10_training_dataset.transform = normalize_transformer
+narma10_test_dataset.transform = normalize_transformer
+```
 
 ### Create basic Echo State Network
 
-> esn_model = etnn.LiESN(...)
+```python
+esn_model = etnn.LiESN(...)
+```
 
 ### Train the network
 
