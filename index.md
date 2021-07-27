@@ -12,7 +12,7 @@ into your pytorch models and simply generate time series data for your research.
 
 The basic element of EchoTorch is the **TimeTensor**, it is an extension of the Tensor class of pytorch but 
 specifying a special dimension as being temporal in nature. You could specify a batch and a channel 
-dimension as well. A TimeTensor as a size of `(batch size, n. channels, time length, ...)`, if the TimeTensor 
+dimension as well. A TimeTensor has a size of `(batch size, n. channels, time length, ...)`, if the TimeTensor 
 has no batch dimension and no channels, the first dimension should be the time dimension. Dimensions after 
 the time dimension are seen as the size of the timeseries.
 
