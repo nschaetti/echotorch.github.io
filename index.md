@@ -18,3 +18,8 @@ the time dimension are seen as the size of the timeseries.
 
 Let's create a TimeTensor full of zeros, similarly as torch:
 
+`
+x = echotorch.zeros((10,), 100)
+`
+
+The variable `x` is a 10-dimensional timeseries of length 100 without batch and channel dimension.
