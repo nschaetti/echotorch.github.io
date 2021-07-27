@@ -1,4 +1,6 @@
 
+# Welcome !
+
 EchoTorch is a Python package intended to simplify the evaluation and implementation of 
 machine learning models based on Echo State Networks and Reservoir Computing.
 
@@ -23,7 +25,10 @@ Let's create a TimeTensor full of zeros, similarly as torch:
 The variable **x**(_t_) is a 10-dimensional timeseries of length 100 without batch and channel dimension.
 
 > In: x.tlen
+> 
 > 100
+> 
 > In: x.size()
+> 
 > (100, 10)`
 
